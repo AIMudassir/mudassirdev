@@ -15,6 +15,13 @@ if ! command -v node &> /dev/null; then
     exit 1
 fi
 
+# Check if npm is installed
+if ! command -v npm &> /dev/null; then
+    echo "❌ Error: npm is not installed."
+    echo "Please install npm (comes with Node.js) from https://nodejs.org/"
+    exit 1
+fi
+
 echo "✓ Node.js version: $(node --version)"
 echo "✓ npm version: $(npm --version)"
 echo ""

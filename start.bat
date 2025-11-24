@@ -16,8 +16,16 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-node --version | findstr /C:"v" >nul
-echo Node.js version: 
+REM Check if npm is installed
+where npm >nul 2>&1
+if %ERRORLEVEL% NEQ 0 (
+    echo Error: npm is not installed.
+    echo Please install npm (comes with Node.js) from https://nodejs.org/
+    pause
+    exit /b 1
+)
+
+echo Node.js version:
 node --version
 echo npm version:
 npm --version
@@ -65,8 +73,8 @@ if %ERRORLEVEL% EQU 0 (
 echo Starting development server...
 echo.
 echo The application will be available at:
-echo   -^> Local:   http://localhost:3000
-echo   -^> Network: http://0.0.0.0:3000
+echo   Local:   http://localhost:3000
+echo   Network: http://0.0.0.0:3000
 echo.
 echo Press Ctrl+C to stop the server
 echo.
