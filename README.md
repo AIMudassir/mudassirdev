@@ -18,12 +18,21 @@ View your app in AI Studio: https://ai.studio/apps/drive/1UUAvbSuDEr-yuQtfGS41wT
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Fastest Way to Run (Recommended)
 
-- **Node.js** (version 16 or higher) - [Download](https://nodejs.org/)
-- **Gemini API Key** - [Get yours here](https://aistudio.google.com/app/apikey)
+**Mac/Linux:**
+```bash
+./start.sh
+```
 
-### Installation
+**Windows:**
+```batch
+start.bat
+```
+
+The script will handle everything automatically! ✨
+
+### Manual Setup
 
 1. **Install dependencies:**
    ```bash
@@ -50,7 +59,8 @@ View your app in AI Studio: https://ai.studio/apps/drive/1UUAvbSuDEr-yuQtfGS41wT
 
 ## 📖 Documentation
 
-For detailed setup instructions, troubleshooting, and more, see [SETUP.md](SETUP.md)
+- **[QUICKSTART.md](QUICKSTART.md)** - Get running in 3 minutes
+- **[SETUP.md](SETUP.md)** - Detailed setup guide with troubleshooting
 
 ## 🛠️ Available Commands
 
